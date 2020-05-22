@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>AJAX Homework</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="/static/profile.css">
+  <script
+    src="http://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div id="profiles-container">
+  <h1>Customer Profiles</h1>
+
+  <ul id="profiles">
+    <li>Balloonicorn the mascot is 5</li>
+    <li>Jane Doe the programmer is 40</li>
+  </ul>
+</div>
+
+<div id="survey-container">
+  <h2>Add yourself to our valued list of customers!</h2>
+  <form id="profile-form" method="POST">
+    <div>
+      <label for="name-field">Name</label>
+      <input
+        class="form-control"
+        type="text"
+        name="name"
+        id="name-field">
+    </div>
+
+    <div>
+       <label for="age-field">Age</label>
+       <input
+         class="form-control"
+         type="text"
+         name="age"
+         id="age-field">
+    </div>
+
+    <div>
+      <label label="occupation-field">Occupation</label>
+      <input
+        class="form-control"
+        type="text"
+        name="occupation"
+        id="occupation-field">
+    </div>
+
+    <div>
+      <button class="btn btn-primary" type="submit" id="submit-profile">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+
+<script src="/static/profile.js"></script>
+
+</body>
+</html>
+
+
+
